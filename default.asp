@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!--Doctype to remove Quirks mode behavior that breaks the website unless you're actually using ie6 or ie7--><%
+<!--Doctype to remove Quirks mode behavior that breaks the website unless you're actually using ie6 or ie7--><!--#include file="credentials.asp"--><%
 'ASPFakeAdmin Alpha 0.1_rev01
-If Session("user") = "admin" Then
-If Session("pass") = "password" Then
+If Session("user") = loginname Then
+If Session("pass") = loginpass Then
 If Session("loggedin") = 1 Then
 If Len(Session("id")) = 32 Then
 response.redirect "home.asp"

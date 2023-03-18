@@ -1,6 +1,7 @@
+<!--#include file="credentials.asp"-->
 <%
-If Session("user") = "admin" Then
-If Session("pass") = "password" Then
+If Session("user") = loginname Then
+If Session("pass") = loginpass Then
 If Session("loggedin") = 1 Then
 If Len(Session("id")) = 32 Then
 Else

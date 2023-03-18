@@ -1,0 +1,4 @@
+<%
+loginname = "admin"
+loginpass = "password"
+%>
